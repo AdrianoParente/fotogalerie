@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+}
+h1{
+    font-family: 'Fuggles', cursive;
+    font-size: 110px;
+    text-align: center;
+    margin-block-start:0em;
+    margin-block-end: 0.15em;
+}
+.pictureContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-image: url('img/bokeh-2072271_1920.jpg');
+}
+
+.singlePicture {
+    background-color: gray;
+    height: 300px;
+    width: 500px;
+    margin: 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.singlePicture img {
+   
+    max-height: 240px;
+    max-width: 400px;
+    object-fit: cover;
+}
+
+.singlePicture:hover {
+    transform: scale(1.1);
+}
+
+.darkMode {
+    width: 100%;
+    height: 100vh;
+    background-color:black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.darkMode img {
+    object-fit: contain;
+    width: 50%;
+}
+
+.btn {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: white;
+    background-color: transparent;
+    color: white;
+    font-family: 'Fuggles', cursive;
+    font-size: 35px;
+    text-align: center;
+    
+}
+
+.btn:hover {
+    cursor: pointer;
+    transform: scale(1.5);
+
+}    
+
+.close {
+    position: absolute;
+    top: 15px;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    background-color: transparent;
+   
+    width: 100px;
+    height: 100px;
+}
